@@ -10,7 +10,7 @@ const store = configureStore();
 store.dispatch(fetchChannels());
 
 ReactDOM.render(
-    <Provider store={configureStore()}>
+    <Provider store={store}>
         <App />
     </Provider>,
     document.getElementById('root')
